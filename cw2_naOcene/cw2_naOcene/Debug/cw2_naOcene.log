@@ -1,0 +1,12 @@
+﻿  Kontener.cpp
+E:\Bartek Nosek_TIPg\obiektowe\cw2_naOcene\cw2_naOcene\Kontener.h(9,14): warning C4200: nonstandard extension used: zero-sized array in struct/union
+E:\Bartek Nosek_TIPg\obiektowe\cw2_naOcene\cw2_naOcene\Kontener.h(9,14): message : This member will be ignored by a defaulted constructor or copy/move assignment operator
+E:\Bartek Nosek_TIPg\obiektowe\cw2_naOcene\cw2_naOcene\Kontener.h(15,16): warning C4834: discarding return value of function with 'nodiscard' attribute
+E:\Bartek Nosek_TIPg\obiektowe\cw2_naOcene\cw2_naOcene\Kontener.h(19,15): warning C4553: '==': result of expression not used; did you intend '='?
+  cw2_naOcene.cpp
+E:\Bartek Nosek_TIPg\obiektowe\cw2_naOcene\cw2_naOcene\Kontener.h(9,14): warning C4200: nonstandard extension used: zero-sized array in struct/union
+E:\Bartek Nosek_TIPg\obiektowe\cw2_naOcene\cw2_naOcene\Kontener.h(9,14): message : This member will be ignored by a defaulted constructor or copy/move assignment operator
+E:\Bartek Nosek_TIPg\obiektowe\cw2_naOcene\cw2_naOcene\Kontener.h(15,16): warning C4834: discarding return value of function with 'nodiscard' attribute
+E:\Bartek Nosek_TIPg\obiektowe\cw2_naOcene\cw2_naOcene\Kontener.h(19,15): warning C4553: '==': result of expression not used; did you intend '='?
+  Generating Code...
+  cw2_naOcene.vcxproj -> E:\Bartek Nosek_TIPg\obiektowe\cw2_naOcene\Debug\cw2_naOcene.exe

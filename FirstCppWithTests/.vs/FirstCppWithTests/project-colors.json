@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "82ada99f-1898-4f47-baec-e78e85f7cd44": {
+      "ProjectGuid": "82ada99f-1898-4f47-baec-e78e85f7cd44",
+      "DisplayName": "FirstCppWithTests",
+      "ColorIndex": 0
+    },
+    "48e92353-45dc-427c-b6be-ae3d6584c7d8": {
+      "ProjectGuid": "48e92353-45dc-427c-b6be-ae3d6584c7d8",
+      "DisplayName": "myunittest",
+      "ColorIndex": 1
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 2
+}

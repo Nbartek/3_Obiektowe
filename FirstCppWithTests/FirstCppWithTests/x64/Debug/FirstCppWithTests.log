@@ -1,0 +1,16 @@
+﻿  FirstCppWithTests.cpp
+G:\3_Obiektowe\FirstCppWithTests\FirstCppWithTests\GenerNumber.h(14,13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+G:\3_Obiektowe\FirstCppWithTests\FirstCppWithTests\GenerNumber.h(26,13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+G:\3_Obiektowe\FirstCppWithTests\FirstCppWithTests\GenerNumber.h(35,21): warning C4244: 'initializing': conversion from 'double' to '__int64', possible loss of data
+G:\3_Obiektowe\FirstCppWithTests\FirstCppWithTests\SearchText.h(24,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+G:\3_Obiektowe\FirstCppWithTests\FirstCppWithTests\SearchText.h(28,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+G:\3_Obiektowe\FirstCppWithTests\FirstCppWithTests\SearchText.h(37,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+G:\3_Obiektowe\FirstCppWithTests\FirstCppWithTests\SearchText.h(48,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+G:\3_Obiektowe\FirstCppWithTests\FirstCppWithTests\SearchText.h(58,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+G:\3_Obiektowe\FirstCppWithTests\FirstCppWithTests\SearchText.h(73,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+G:\3_Obiektowe\FirstCppWithTests\FirstCppWithTests\SearchText.h(81,1): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+G:\3_Obiektowe\FirstCppWithTests\FirstCppWithTests\SearchText.h(104,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+G:\3_Obiektowe\FirstCppWithTests\FirstCppWithTests\SearchText.h(111,1): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+G:\3_Obiektowe\FirstCppWithTests\FirstCppWithTests\SearchText.h(112,1): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+G:\3_Obiektowe\FirstCppWithTests\FirstCppWithTests\FirstCppWithTests.cpp(14,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  FirstCppWithTests.vcxproj -> G:\3_Obiektowe\FirstCppWithTests\x64\Debug\FirstCppWithTests.exe
