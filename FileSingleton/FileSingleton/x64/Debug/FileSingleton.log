@@ -1,0 +1,5 @@
+﻿  FileSingleton.cpp
+  SingletonInOut.cpp
+  Generating Code...
+E:\BartekN3TIPg\3_Obiektowe\FileSingleton\FileSingleton\SingletonInOut.h(34): warning C4715: 'SingletonInOut::GetFileContent': not all control paths return a value
+  FileSingleton.vcxproj -> E:\BartekN3TIPg\3_Obiektowe\FileSingleton\x64\Debug\FileSingleton.exe
