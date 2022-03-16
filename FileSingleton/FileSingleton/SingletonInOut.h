@@ -32,8 +32,14 @@ public:
 			return result;
 		}
 	}
-	void SaveFile(std::string name,std::string input) {
-
+	void SaveFile(std::string input) {
+		std::ofstream sf;
+		sf.open(filename.c_str());
+		if (sf.is_open()) {
+			std::cin.ignore(256, '\n');
+			sf << input ;
+		}
+		sf.close();
 	 }
 
 };
