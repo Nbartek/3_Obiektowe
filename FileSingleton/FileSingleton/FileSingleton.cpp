@@ -15,7 +15,8 @@ int main()
 	name.append(".txt");
 	cout << "Co chcec wpisac do pliku: " << endl;
 	cin >> si;
-
+	getline(cin, si);
+	cout << si << endl;
 	s1.setFileName(name);
 	//s1.GetFileContent();
 	s1.SaveFile(si);
