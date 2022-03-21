@@ -13,12 +13,15 @@ int main()
 	cout << "Podaj nazwe pliku: ";
 	cin >> name;
 	name.append(".txt");
-	cout << "Co chcec wpisac do pliku: " << endl;
-	cin >> si;
-	getline(cin, si);
-	cout << si << endl;
+	//cout << "Co chcec wpisac do pliku: " << endl;
+	//cin >> si;
+	//getline(cin, si);
+	//cout << si << endl;
 	s1.setFileName(name);
 	//s1.GetFileContent();
-	s1.SaveFile(si);
+	//s1.SaveFile(si);
+	vector<string> byWords = s1.GetFileByWords();
+	vector<string> byLine = s1.GetFileContent();
+
 }
 

@@ -43,43 +43,38 @@ public:
 	 }
 	std::vector<std::string> GetFileByWords() {
 		std::ifstream sf;
+		int dd;
+		std::string cuted;
 		std::vector<std::string> result;
 		sf.open(filename.c_str());
 		if (sf.is_open()) {
 			std::cin.ignore(256, '\n');
 			std::string line;
+			int length;
 			while (std::getline(sf, line)) {
-
-			}
-		}
-	}
-	std::vector<std::string> StringToWords(std::string text) {
-		std::vector<std::string> result;
-		int length = text.length();
-			int count = 0;
-			std::string cuted;
-			int dd = 0;
-			for (int i = 0; i <= length; i++) {
-				if (text[i] == ' ') {
-						if (text.find(' ') != -1) {
-							dd = text.find(' ',i+1);
-							cuted = text.substr(i, dd + 1);
-							if (cuted.find('/') == std::string::npos) {
-								cuted.insert(1, "/");
-								dd = 0;
-								if (text.find(cuted) != -1) {
-									//dd = text.find(cuted);
-									count++;
-									cuted = "";
-		//dokoñcz
-								}
+				line.insert(0,1, ' ');
+				line.append(" ");
+				length = line.length();
+				for (int i = 0; i <= length; i++) {
+					if (line[i] == ' ') {
+						if (line.find(' ',i+1) != -1) {
+							dd = line.find(' ', i + 1);
+							cuted = line.substr(i, dd + 1);
+							if (line.find(cuted) != -1) {								
+								result.push_back(cuted);
+								cuted = "";
+								//dzia³a ALE cuted sie zepsulo, filip pokazal jak to aprawic w wczesniejszym zadaniu
 							}
+
 						};
-					
-		
+
+
+					}
 				}
+				
 			}
 			return result;
+		}
 	}
 
 };
