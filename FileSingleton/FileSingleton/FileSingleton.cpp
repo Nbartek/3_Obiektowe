@@ -3,7 +3,7 @@
 
 #include <iostream>
 #include "SingletonInOut.h"
-
+#include <string>
 using namespace std;
 int main()
 {
@@ -17,11 +17,13 @@ int main()
 	//cin >> si;
 	//getline(cin, si);
 	//cout << si << endl;
+	//string al = "ala ma kota";
 	s1.setFileName(name);
 	//s1.GetFileContent();
 	//s1.SaveFile(si);
 	vector<string> byWords = s1.GetFileByWords();
 	vector<string> byLine = s1.GetFileContent();
+	//cout << al.substr(4, 7) << endl;;
 
 }
 

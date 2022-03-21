@@ -59,11 +59,12 @@ public:
 					if (line[i] == ' ') {
 						if (line.find(' ',i+1) != -1) {
 							dd = line.find(' ', i + 1);
-							cuted = line.substr(i, dd + 1);
+							cuted = line.substr(i, dd+1-i);
+							std::cout << cuted << std::endl;
 							if (line.find(cuted) != -1) {								
 								result.push_back(cuted);
 								cuted = "";
-								//dzia³a ALE cuted sie zepsulo, filip pokazal jak to aprawic w wczesniejszym zadaniu
+								
 							}
 
 						};
@@ -75,6 +76,9 @@ public:
 			}
 			return result;
 		}
+	}
+	std::vector<std::string> CountOccurenceOfWords() {
+
 	}
 
 };
