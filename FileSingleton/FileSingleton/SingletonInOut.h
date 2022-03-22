@@ -3,6 +3,7 @@
 #include <vector>
 #include <fstream>
 #include <iostream>
+#include <map>
 class SingletonInOut
 {
 private:
@@ -37,10 +38,10 @@ public:
 		sf.open(filename.c_str());
 		if (sf.is_open()) {
 			std::cin.ignore(256, '\n');
-			sf << input ;
+			sf << input;
 		}
 		sf.close();
-	 }
+	}
 	std::vector<std::string> GetFileByWords() {
 		std::ifstream sf;
 		int dd;
@@ -52,19 +53,19 @@ public:
 			std::string line;
 			int length;
 			while (std::getline(sf, line)) {
-				line.insert(0,1, ' ');
+				line.insert(0, 1, ' ');
 				line.append(" ");
 				length = line.length();
 				for (int i = 0; i <= length; i++) {
 					if (line[i] == ' ') {
-						if (line.find(' ',i+1) != -1) {
+						if (line.find(' ', i + 1) != -1) {
 							dd = line.find(' ', i + 1);
-							cuted = line.substr(i, dd+1-i);
+							cuted = line.substr(i, dd + 1 - i);
 							std::cout << cuted << std::endl;
-							if (line.find(cuted) != -1) {								
+							if (line.find(cuted) != -1) {
 								result.push_back(cuted);
 								cuted = "";
-								
+
 							}
 
 						};
@@ -72,13 +73,54 @@ public:
 
 					}
 				}
-				
+
 			}
 			return result;
 		}
 	}
-	std::vector<std::string> CountOccurenceOfWords() {
+	std::map<std::string, int> CountOccurenceOfWords() {
+		std::ifstream sf;
+		int dd;
+		std::string cuted;
+		std::map<std::string, int> result;
+		sf.open(filename.c_str());
+		if (sf.is_open()) {
+			std::cin.ignore(256, '\n');
+			std::string line;
+			int length;
+			while (std::getline(sf, line)) {
+				line.insert(0, 1, ' ');
+				line.append(" ");
+				length = line.length();
+				for (int i = 0; i <= length; i++) {
+					if (line[i] == ' ') {
+						if (line.find(' ', i + 1) != -1) {
+							dd = line.find(' ', i + 1);
+							cuted = line.substr(i, dd + 1 - i);
+							//std::cout << cuted << std::endl;
+							if (line.find(cuted) != -1) {
+								auto search = result.find(cuted);
+								if (search != result.end()){
+									result[cuted]++;
+									std::cout << result[cuted] << std::endl;
+								}
+								else {
+									result[cuted]=1;
+									//std::cout << result[cuted] << std::endl;
+								}
+								cuted = "";
 
+							}
+
+						};
+
+
+					}
+				}
+
+			}
+			return result;
+		}
 	}
 
 };

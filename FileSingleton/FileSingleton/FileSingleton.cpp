@@ -21,8 +21,14 @@ int main()
 	s1.setFileName(name);
 	//s1.GetFileContent();
 	//s1.SaveFile(si);
-	vector<string> byWords = s1.GetFileByWords();
-	vector<string> byLine = s1.GetFileContent();
+	//vector<string> byWords = s1.GetFileByWords();
+	//vector<string> byLine = s1.GetFileContent();
+	map<string, int> countWords = s1.CountOccurenceOfWords();
+	for (auto it = countWords.cbegin(); it != countWords.cend(); ++it)
+	{
+		std::cout << it->first << " " << it->second << "\n";
+	}
+	
 	//cout << al.substr(4, 7) << endl;;
 
 }
