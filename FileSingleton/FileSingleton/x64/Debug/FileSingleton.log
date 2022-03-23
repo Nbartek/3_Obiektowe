@@ -1,7 +1,1 @@
-﻿  FileSingleton.cpp
-D:\Programing\3_Obiektowe\FileSingleton\FileSingleton\SingletonInOut.h(58,1): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-D:\Programing\3_Obiektowe\FileSingleton\FileSingleton\SingletonInOut.h(62,1): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-D:\Programing\3_Obiektowe\FileSingleton\FileSingleton\SingletonInOut.h(94,1): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-D:\Programing\3_Obiektowe\FileSingleton\FileSingleton\SingletonInOut.h(98,1): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-D:\Programing\3_Obiektowe\FileSingleton\FileSingleton\SingletonInOut.h(124): warning C4715: 'SingletonInOut::CountOccurenceOfWords': not all control paths return a value
-  FileSingleton.vcxproj -> D:\Programing\3_Obiektowe\FileSingleton\x64\Debug\FileSingleton.exe
+﻿  FileSingleton.vcxproj -> E:\BartekN3TIPg\3_Obiektowe\FileSingleton\x64\Debug\FileSingleton.exe
