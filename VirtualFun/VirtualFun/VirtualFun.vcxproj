@@ -142,12 +142,16 @@
     <ClCompile Include="BaseClass.cpp" />
     <ClCompile Include="DerivedClassOne.cpp" />
     <ClCompile Include="DerivedClassTwo.cpp" />
+    <ClCompile Include="NewCLass.cpp" />
+    <ClCompile Include="Repo.cpp" />
     <ClCompile Include="VirtualFun.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BaseClass.h" />
     <ClInclude Include="DerivedClassOne.h" />
     <ClInclude Include="DerivedClassTwo.h" />
+    <ClInclude Include="NewCLass.h" />
+    <ClInclude Include="Repo.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

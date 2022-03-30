@@ -1,6 +1,6 @@
 #pragma once
 #include <iostream>
-class BaseClass
+class BaseClass// abstrakcyjna
 {
 protected:
 	int value{ 0 };
@@ -9,8 +9,9 @@ public:
 	BaseClass(int value) {
 		this->value = value;
 	}
-	void ToOerirde() {
-		std::cout << "Cos tam cos ta" << std::endl;
-	}
+	virtual void ToOverride() = 0;//czysto wirtualna
+//{
+//		std::cout << "Cos tam cos ta" << std::endl; zwyk³a virtualna
+//	}
 };
 

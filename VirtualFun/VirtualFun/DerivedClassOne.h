@@ -1,11 +1,16 @@
 #pragma once
 #include "BaseClass.h"
-class DerivedClassOne :
-    public BaseClass
+class DerivedClassOne : public BaseClass
 {
-    DerivedClassOne() {};
-    void ToOverride() {
-    std::cout << "Nadpisana w klasie derived one" << std::endl;
-    }
+private:
+	bool isOk = false;
+public:
+	DerivedClassOne() {  }
+	DerivedClassOne(int fromBase, bool isOk) :BaseClass(fromBase) {
+		this->isOk = isOk;
+	}
+	void ToOverride() {
+		std::cout << "Nadpisana w klasie DerivedClassOne.." << std::endl;
+	}
 };
 

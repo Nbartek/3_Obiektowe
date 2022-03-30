@@ -5,13 +5,20 @@
 #include <iostream>
 #include "DerivedClassOne.h"
 #include "DerivedClassTwo.h"
+#include <vector>
+#include "Repo.h"
 
 int main()
 {
-    DerivedClassOne d1;
-    DerivedClassTwo d2;
-    d1.ToOerirde();
-    d2.ToOerirde();
+    //DerivedClassOne d1;
+    //DerivedClassTwo d2;
+    //d1.ToOerirde();
+    //d2.ToOerirde();
+    Repo repo;
+    std::vector<BaseClass*> data = repo.GetAll();
+    for (BaseClass* item : data) {
+        item->ToOverride();
+    }
     std::cout << "Hello World!\n";
 }
 
