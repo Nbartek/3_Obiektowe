@@ -1,8 +1,23 @@
 #pragma once
 #include <iostream>
+#include <vector>
+#include <iostream>
+#include <fstream>
+/*
+	Metoda bed¹ca szkieletem projektu o wzorcu internetowym
+	Tworzy podstawowe funkcje które mog¹, musz¹ lub nie musz¹ byc nadpisane w klasach pochodnych
+
+	Funkcja odpowiadaj¹ca za pobieranie wyniku wypisanego w konsoli
+*/
 class AbstractRutyny
 {
 public:
+	void SaveFile(std::string zapis, AbstractRutyny* plik) {
+		std::ofstream file(zapis);
+
+		file << plik;
+		file.close();
+	}
 	void Rutyna() const {
 		this->PodstawowaPrzygotowanie();
 		this->DefinujacePrzygotowanie();
@@ -35,4 +50,5 @@ protected:
 	virtual void DodatkowaPraca()const {};
 	virtual void DodatkowyOdpoczynek()const {};
 };
+
 
