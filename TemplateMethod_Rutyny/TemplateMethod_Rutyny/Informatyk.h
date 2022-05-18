@@ -3,21 +3,21 @@
 class Informatyk :
     public AbstractRutyny
 {
-	virtual void DefinujacePrzygotowanie() const {
-		std::cout << "Wlanczenie komputera i przygotowanie srodowiska pracy"<<std::endl;
+	virtual std::string DefinujacePrzygotowanie() const {
+		return "Wlanczenie komputera i przygotowanie srodowiska pracy\n";
 	};
-	virtual void DefinujacaPraca() const {
-		std::cout << "Pisanie kodu i testy programow" << std::endl;
+	virtual std::string DefinujacaPraca() const {
+		return "Pisanie kodu i testy programow\n";
 	};
-	virtual void DefinujacyOdpoczynek() const {
-		std::cout << "Silownia, basen, cwiczenia itp." << std::endl;
+	virtual std::string DefinujacyOdpoczynek() const {
+		return "Silownia, basen, cwiczenia itp.\n";
 	};
 
-	virtual void DodatkowepPrzygotowanie()const {
-		std::cout << "Zrobienie sobie kawusi" << std::endl;
+	virtual std::string DodatkowepPrzygotowanie()const {
+		return "Zrobienie sobie kawusi\n";
 	};
-	virtual void DodatkowaPraca()const {
-		std::cout << "Praca po godzinach" << std::endl;
+	virtual std::string DodatkowaPraca()const {
+		return "Praca po godzinach\n";
 	};
 };
 

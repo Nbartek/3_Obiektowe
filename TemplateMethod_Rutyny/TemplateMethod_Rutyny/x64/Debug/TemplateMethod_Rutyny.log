@@ -3,4 +3,7 @@
   Informatyk.cpp
   TemplateMethod_Rutyny.cpp
   Generating Code...
-  TemplateMethod_Rutyny.vcxproj -> E:\BartekN3TIPg\3_Obiektowe\TemplateMethod_Rutyny\x64\Debug\TemplateMethod_Rutyny.exe
+E:\BartekN3TIPg\3_Obiektowe\TemplateMethod_Rutyny\TemplateMethod_Rutyny\AbstractRutyny.h(32): error C4716: 'AbstractRutyny::Rutyna': must return a value
+E:\BartekN3TIPg\3_Obiektowe\TemplateMethod_Rutyny\TemplateMethod_Rutyny\AbstractRutyny.h(50): error C4716: 'AbstractRutyny::DodatkowyOdpoczynek': must return a value
+E:\BartekN3TIPg\3_Obiektowe\TemplateMethod_Rutyny\TemplateMethod_Rutyny\AbstractRutyny.h(48): error C4716: 'AbstractRutyny::DodatkowepPrzygotowanie': must return a value
+E:\BartekN3TIPg\3_Obiektowe\TemplateMethod_Rutyny\TemplateMethod_Rutyny\AbstractRutyny.h(49): error C4716: 'AbstractRutyny::DodatkowaPraca': must return a value

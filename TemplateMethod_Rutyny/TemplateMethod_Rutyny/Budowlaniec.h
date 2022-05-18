@@ -3,18 +3,18 @@
 class Budowlaniec :
     public AbstractRutyny
 {
-	virtual void DefinujacePrzygotowanie() const {
-		std::cout << "Jazda samochodem na budowe i zaladowanie sprzetu" << std::endl;
+	virtual std::string DefinujacePrzygotowanie() const {
+		return "Jazda samochodem na budowe i zaladowanie sprzetu\n";
 	};
-	virtual void DefinujacaPraca() const {
-		std::cout << "Prace budowlane, wyjazdy po sprzet" << std::endl;
+	virtual std::string DefinujacaPraca() const {
+		return "Prace budowlane, wyjazdy po sprzet\n";
 	};
-	virtual void DefinujacyOdpoczynek() const {
-		std::cout << "Cwiczenia umyslowe, czytanie ksiazki, krzyzowki" << std::endl;
+	virtual std::string DefinujacyOdpoczynek() const {
+		return "Cwiczenia umyslowe, czytanie ksiazki, krzyzowki\n";
 	};
 
-	virtual void DodatkowyOpodczynek()const {
-		std::cout << "Piwko" << std::endl;
+	virtual std::string DodatkowyOpodczynek()const {
+		return "Piwko\n" ;
 	};
 };
 

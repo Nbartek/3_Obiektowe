@@ -14,11 +14,10 @@ class AbstractRutyny
 public:
 	void SaveFile(std::string zapis, AbstractRutyny* plik) {
 		std::ofstream file(zapis);
-
-		file << plik;
+		file << plik->Rutyna();
 		file.close();
 	}
-	void Rutyna() const {
+	std::string Rutyna() const {
 		this->PodstawowaPrzygotowanie();
 		this->DefinujacePrzygotowanie();
 		this->DodatkowepPrzygotowanie();
@@ -32,23 +31,23 @@ public:
 		this->DefinujacyOdpoczynek();
 	}
 protected:
-	void PodstawowaPrzygotowanie() const {
-		std::cout << "		Obudzenie sie i przygotowanie sniadania\n";
+	std::string PodstawowaPrzygotowanie() const {
+		return "		Obudzenie sie i przygotowanie sniadania\n";
 	}
-	void PodstawowaPraca() const {
-		std::cout << "		Zarabianie pieniedzy w przedziale czasowym\n";
+	std::string PodstawowaPraca() const {
+		return "		Zarabianie pieniedzy w przedziale czasowym\n";
 	}
-	void PodstawoweOdpoczynek() const {
-		std::cout << "		Odpoczynek po pracy i sporzycie jedzenia\n";
+	std::string PodstawoweOdpoczynek() const {
+		return "		Odpoczynek po pracy i sporzycie jedzenia\n";
 	}
 
-	virtual void DefinujacePrzygotowanie() const = 0;
-	virtual void DefinujacaPraca() const = 0;
-	virtual void DefinujacyOdpoczynek() const = 0;
+	virtual std::string DefinujacePrzygotowanie() const = 0;
+	virtual std::string DefinujacaPraca() const = 0;
+	virtual std::string DefinujacyOdpoczynek() const = 0;
 
-	virtual void DodatkowepPrzygotowanie()const {};
-	virtual void DodatkowaPraca()const {};
-	virtual void DodatkowyOdpoczynek()const {};
+	virtual std::string DodatkowepPrzygotowanie()const {};
+	virtual std::string DodatkowaPraca()const {};
+	virtual std::string DodatkowyOdpoczynek()const {};
 };
 
 
