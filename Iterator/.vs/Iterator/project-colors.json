@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "93c3e0b8-0a66-42f6-9996-7534e69ba0e8": {
+      "ProjectGuid": "93c3e0b8-0a66-42f6-9996-7534e69ba0e8",
+      "DisplayName": "Iterator",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
